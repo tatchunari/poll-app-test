@@ -1,5 +1,8 @@
 import QuestionCard from '../components/QuestionCard'
 import { questions } from '../utils/random'
+// styling
+import "nes.css/css/nes.min.css";
+import '../styles/index.css'
 
 const QuestionPage = ({ onPick }) => {
   return (

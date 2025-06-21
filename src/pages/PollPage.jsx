@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import RandomButton from '../components/RandomButton';
+// styling
+import "nes.css/css/nes.min.css";
+import '../styles/index.css'
 
 const PollPage = ({ question, onRandom, onStart }) => {
 

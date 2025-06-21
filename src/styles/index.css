@@ -1,6 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 @import "tailwindcss";
 @plugin "daisyui";
 
-* {
-    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+@theme {
+    --font-primary: "Pixelify Sans", "sans-serif";
+    --font-secondary: "Bai Jamjuree", "sans-serif";
+}
+
+.bg-responsive {
+    background-image: url('/images/bg-mobile.jpg');
+}
+
+@media (min-width: 640px) {
+    .bg-responsive {
+        background-image: url('/images/bg-desktop.jpg');
+    }
 }
