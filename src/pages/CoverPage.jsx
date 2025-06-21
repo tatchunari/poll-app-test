@@ -7,7 +7,7 @@ const CoverPage = ({ onStart }) => {
         <h1 className='text-3xl font-bold mb-4'>Game Name</h1>
 
         <button 
-        className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer' onClick={onStart}>
+        className='bg-blue-500 transition duration-300 ease-in-out text-white font-bold py-2 px-4 rounded cursor-pointer ' onClick={onStart}>
           Start 
         </button>
       </section>
