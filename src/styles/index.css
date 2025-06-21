@@ -19,3 +19,7 @@
         background-image: url('/images/bg-desktop.jpg');
     }
 }
+ 
+h1, h2, h3 {
+    margin: 0 !important;
+}

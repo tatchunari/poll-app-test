@@ -1,75 +1,121 @@
 export const questions = [
   { 
     id: 1, 
-    text: "Do you like dogs?", 
-    img: "/images/questioncard-1.png",
+    text: "คนรวยต้องจ่ายเงินให้คนจน", 
+    img: "/images/Q1.png",
     pollImg: "/images/pollquestion-1.png"
   },
   { 
     id: 2, 
-    text: "Is this true?", 
-    img: "/images/questioncard-2.png",
+    text: "ศิลปะบนจอดีกว่าแบบนอกจอ", 
+    img: "/images/Q2.png",
     pollImg: "/images/pollquestion-2.png"
   },
   { 
     id: 3, 
-    text: "Do you agree?", 
-    img: "/images/questioncard-1.png",
+    text: "ซุปเปอร์แมนเก่งที่สุด", 
+    img: "/images/Q3.png",
     pollImg: "/images/pollquestion-1.png"
   },
   { id: 4,
-    text: "Are you hungry?", 
-    img: "/images/questioncard-2.png",
+    text: "คุกช่วยให้คนกลับใจ", 
+    img: "/images/Q4.png",
     pollImg: "/images/pollquestion-2.png"
   },
   { 
     id: 5, 
-    text: "Do you like dogs?", 
-    img: "/images/questioncard-1.png",
+    text: "คนเราต้องมีสิ่งยึดเหนี่ยวทางจิตใจ", 
+    img: "/images/Q5.png",
     pollImg: "/images/pollquestion-1.png"
   },
   { 
     id: 6, 
-    text: "Is this true?", 
-    img: "/images/questioncard-2.png",
+    text: "รถไฟฟ้าเป็นประโยชน์ต่อใครหลายคน", 
+    img: "/images/Q6.png",
     pollImg: "/images/pollquestion-2.png"
   },
   { 
     id: 7, 
-    text: "Do you agree?", 
-    img: "/images/questioncard-1.png",
+    text: "การทำกิจกรรมร่วมกัน ปลูกป่าชายเลนสร้างประโยชน์ให้แก่ธรรมชาติ", 
+    img: "/images/Q7.png",
     pollImg: "/images/pollquestion-1.png"
   },
   { 
     id: 8, 
-    text: "Are you hungry?", 
-    img: "/images/questioncard-2.png",
+    text: "การทำทานแล้วจะได้บุญ", 
+    img: "/images/Q8.png",
     pollImg: "/images/pollquestion-2.png"
   },
   { 
     id: 9, 
-    text: "Do you like dogs?", 
-    img: "/images/questioncard-1.png",
+    text: "เข้าวัดก็ควรทำบุญ ทำทานเล็กๆน้อยๆก็ยังดี", 
+    img: "/images/Q9.png",
     pollImg: "/images/pollquestion-1.png"
   },
   { 
     id: 10, 
-    text: "Is this true?", 
-    img: "/images/questioncard-2.png",
+    text: "เราควรมีสวนสัตว์ และพิพิธภัณฑ์สัตว์น้ำ", 
+    img: "/images/Q10.png",
     pollImg: "/images/pollquestion-2.png"
   },
   { 
     id: 11, 
-    text: "Do you agree?", 
-    img: "/images/questioncard-1.png",
+    text: "ลิงควรอยู่บนต้นไม้", 
+    img: "/images/Q11.png",
     pollImg: "/images/pollquestion-1.png"
   },
   { 
     id: 12, 
-    text: "Are you hungry?", 
-    img: "/images/questioncard-2.png",
+    text: "ข้ามถนนต้องมองซ้ายมองขวา", 
+    img: "/images/Q12.png",
     pollImg: "/images/pollquestion-2.png"
   },
+  {id: 13, 
+    text: "เราต้องกินผัก", 
+    img: "/images/Q13.png",
+    pollImg: "/images/pollquestion-1.png"
+  },
+  { 
+    id: 14, 
+    text: "ผักเป็นสิ่งมีประโยชน์", 
+    img: "/images/Q14.png",
+    pollImg: "/images/pollquestion-2.png"
+  },
+  { 
+    id: 15, 
+    text: "Do you agree?", 
+    img: "/images/Q15.png",
+    pollImg: "/images/pollquestion-1.png"
+  },
+  { id: 16,
+    text: "Are you hungry?", 
+    img: "/images/Q16.png",
+    pollImg: "/images/pollquestion-2.png"
+  },
+  { 
+    id: 17, 
+    text: "Do you like dogs?", 
+    img: "/images/Q17.png",
+    pollImg: "/images/pollquestion-1.png"
+  },
+  { 
+    id: 18, 
+    text: "Is this true?", 
+    img: "/images/Q18.png",
+    pollImg: "/images/pollquestion-2.png"
+  },
+  { 
+    id: 19, 
+    text: "Do you agree?", 
+    img: "/images/Q19.png",
+    pollImg: "/images/pollquestion-1.png"
+  },
+  { 
+    id: 20, 
+    text: "Are you hungry?", 
+    img: "/images/Q20.png",
+    pollImg: "/images/pollquestion-2.png"
+  }
 ];
 
  export const getRandomQuestion = () => {

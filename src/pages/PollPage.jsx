@@ -18,6 +18,7 @@ const PollPage = ({ question, onRandom, onStart }) => {
   }
 
   return (
+    <div className="bg-responsive bg-cover bg-no-repeat bg-center h-screen w-full flex justify-center">
     <div className='flex items-center justify-center'>
       <div className='card bg-base-300 text-primary-content flex flex-col items-center mt-10 w-[90vw] max-w-[800px] min-h-[60vh] p-6 rounded-2xl shadow-xl'>
         <h2 className='text-2xl my-10 text-black'>{question.text}</h2>
@@ -48,6 +49,7 @@ const PollPage = ({ question, onRandom, onStart }) => {
         onRandom={onRandom}/>
         </div>
       </div>
+    </div>
     </div>
   )
 }

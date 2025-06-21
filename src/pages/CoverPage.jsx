@@ -18,11 +18,11 @@ const CoverPage = ({ onStart }) => {
         <div className="flex flex-col items-center">
           <div className='flex flex-row justify-center items-center'>
             <i className="snes-jp-logo scale-[0.5] w-[10px]"></i>
-            <h2 className="font-primary text-blue-400 m-0">20 - 30 MINUTES</h2>
+            <h2 className="font-primary text-blue-400 mt-0 mb-0">20 - 30 MINUTES</h2>
           </div>
-          <div className="flex flex-row justify-center items-center">
-            <i className="nes-icon scale-[0.5] w-[10px] heart m-0"></i>
-            <h2 className="font-primary text-blue-400 my-0 mx-[10px]">2 - 3 PEOPLE</h2>
+          <div className="flex flex-row justify-center">
+            <i className="nes-icon scale-[0.5] w-[10px] heart mt-[3px]"></i>
+            <h2 className="font-primary text-blue-400 mt-0 mb-0">2 - 3 PEOPLE</h2>
           </div>
         </div>
         {/* Button */}
