@@ -2,12 +2,14 @@ import { useState } from 'react';
 import RandomButton from '../components/RandomButton';
 // styling
 import '../styles/index.css';
-import Bubble from '../assets/bubble.svg?react';
-import ButtonBackground from '../assets/vote-button.svg?react';
+import BubbleRight from '../assets/bubble.svg?react';
+import BubbleLeft from '../assets/bubble-left.svg?react';
 import ThumbUpWhite from '../assets/thumbs-up-white.svg?react';
 import ThumbDownWhite from '../assets/thumbs-down-white.svg?react';
 import ThumbUpBlue from '../assets/thumbs-up-blue.svg?react';
 import ThumbDownBlue from '../assets/thumbs-down-blue.svg?react';
+import RestartButton from '../assets/restart-button.svg?react';
+
 
 
 const PollPage = ({ question, onRandom, onStart }) => {
@@ -83,14 +85,15 @@ const PollPage = ({ question, onRandom, onStart }) => {
       
           <div className='flex flex-row justify-center gap-12 md:gap-30 sm:gap-8 my-5'>
             <div className='relative flex items-center justify-center w-24 h-24'>
-              <Bubble className='absolute inset-0 w-full h-20 z-0'/>
+              <BubbleRight className='absolute inset-0 w-full h-20 z-0'/>
               <p className='font-extrabold text-4xl font-primary text-black z-10'>
             {yesVote}
             </p>
             </div>
           
           <div className='relative flex items-center justify-center w-24 h-24'>
-            <img src="src/assets/bubble-left.svg" className='absolute inset-0 h-20 z-0 mx-auto'/>
+           <BubbleLeft className='absolute inset-0 w-full h-20 z-0'/>
+              <p className='font-extrabold text-4xl font-primary text-black z-10'></p> 
             <p className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-extrabold text-4xl font-primary text-black z-10'>
             {noVote}
            </p>
@@ -102,7 +105,7 @@ const PollPage = ({ question, onRandom, onStart }) => {
         <button onClick={onStart}
         className='relative font-secondary flex items-center justify-center px-10 py-10 transition-all duration-150 hover:scale-105 active:scale-95 active:translate-y-0.5'>
           <p className='text-white font-bold text-[12px] sm:text-[16px] md:text-[18px] lg:text-[20px] z-10'>เลือกใหม่</p>
-         <img src="src/assets/restart-button.svg" className='absolute z-0 inset-0 object-contain w-full h-full' /> 
+         <RestartButton className='absolute z-0 inset-0 object-contain w-full h-full' /> 
         </button>
 
         <RandomButton 
