@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import RandomButton from '../components/RandomButton';
 // styling
-import "nes.css/css/nes.min.css";
-import '../styles/index.css'
+import '../styles/index.css';
+import Bubble from '../assets/bubble.svg?react';
+import ButtonBackground from '../assets/vote-button.svg?react';
 
 const PollPage = ({ question, onRandom, onStart }) => {
 
@@ -18,31 +19,90 @@ const PollPage = ({ question, onRandom, onStart }) => {
   }
 
   return (
-    <div className="bg-responsive bg-cover bg-no-repeat bg-center h-screen w-full flex justify-center">
-    <div className='flex items-center justify-center'>
-      <div className='card bg-base-300 text-primary-content flex flex-col items-center mt-10 w-[90vw] max-w-[800px] min-h-[60vh] p-6 rounded-2xl shadow-xl'>
-        <h2 className='text-2xl my-10 text-black'>{question.text}</h2>
+    <div>
+
+      {/* Background Layer */}
+      <div 
+      className='relative bg-responsive bg-cover bg-no-repeat bg-center min-h-screen w-full flex justify-center z-0'>
+
+      {/* Overlay layer */}
+      <div className='absolute h-full inset-0 bg-white opacity-50 z-10'></div>
+
+      {/* Poll Container */}
+    <div className='z-20 flex flex-col'>
+      
+      {/* Question */}
+      <div className='flex justify-center my-20 relative'>
+
+        {/* Wood-sign */}
         <img 
-          src={question.pollImg}
-          alt="Poll Image"
-          className='max-w-md w-full h-auto mb-6 rounded shadow'
+        className='w-[80%] max-w-md'
+        src='/images/wood-sign.png'
         />
-        <div className='button-container mt-5 grid grid-cols-2 gap-3'>
 
-         <button 
-        onClick={handleYesVote}
-        className='btn btn-success w-30'>YES</button>
+        {/* Question Text */}
+        <h2 className='absolute font-secondary top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-xl sm:text-2xl text-center text-black font-bold px-2'>{question.text}</h2>
+        
+        </div>
 
-        <button 
-        onClick={handleNoVote}
-        className='btn btn-error w-30'>NO</button>
+        {/* Button Container */}
+        <div className='flex flex-col'>
 
-        <p className='text-center text-black'>{yesVote}</p>
-        <p className='text-center text-black'>{noVote}</p>
+        {/* Vote Button */}
+        <div className='flex flex-row items-center justify-center gap-20'>
+          
+          {/* Yes Button */}
+          <div className='relative w-24 h-24 flex items-center justify-center'>
+            <button 
+              onClick={handleYesVote}
+              className='z-10'
+              >
+              <img 
+              src='images/like.svg'
+              className='w-16'
+              />
+            </button>
+            <ButtonBackground className='absolute top-1/2 left-1/2 w-32 h-32 transform -translate-x-1/2 -translate-y-1/2 z-0'/> 
+          </div>
 
+          {/* No Button */}
+          <div className='relative w-24 h-24 flex items-center justify-center'>
+            <button 
+              onClick={handleNoVote}
+              className='z-10'
+              >
+              <img 
+              src='images/unlike.svg'
+              className='w-16'
+              />
+            </button>
+           <ButtonBackground className='absolute top-1/2 left-1/2 w-32 h-32 transform -translate-x-1/2 -translate-y-1/2 z-0'/>  
+          </div>
+        </div>
+
+        {/* Vote Count */}
+      
+          <div className='flex flex-row justify-center gap-20 my-5'>
+            <div className='relative flex items-center justify-center w-24 h-24'>
+              <Bubble className='absolute inset-0 w-full h-full z-0'/>
+              <p className='font-extrabold text-4xl font-primary text-black z-10 translate-y-3'>
+            {yesVote}
+            </p>
+            </div>
+          
+          <div className='relative flex items-center justify-center w-24 h-24'>
+            <Bubble className='absolute inset-0 w-full h-full z-0'/>
+            <p className='font-extrabold text-4xl font-primary text-black z-10 translate-y-3'>
+            {noVote}
+           </p>
+          </div>
+          </div>
+
+        {/* Random & Restart Button */}
+        <div className='flex flex-row justify-center gap-3'>
         <button onClick={onStart}
-        className='btn btn-info w-30'>
-          Restart
+        className='nes-btn font-secondary is-primary'>
+          เลือกใหม่
         </button>
 
         <RandomButton 
@@ -50,7 +110,8 @@ const PollPage = ({ question, onRandom, onStart }) => {
         </div>
       </div>
     </div>
-    </div>
+   </div>
+  </div>
   )
 }
 

@@ -1,5 +1,6 @@
 import { getRandomQuestion, questions } from "../utils/random"
 
+
 const RandomButton = ({ onRandom }) => {
 
   const randomQuestion = getRandomQuestion();
@@ -8,9 +9,9 @@ const RandomButton = ({ onRandom }) => {
     <div>
       <button 
       onClick={onRandom}
-      className='btn btn-soft btn-info w-30'
+      className='nes-btn is-warning font-secondary'
       >
-        Random
+      สุ่มใหม่? 
       </button>
 
     </div>

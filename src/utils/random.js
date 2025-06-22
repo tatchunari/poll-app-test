@@ -77,42 +77,42 @@ export const questions = [
   },
   { 
     id: 14, 
-    text: "ผักเป็นสิ่งมีประโยชน์", 
+    text: "เราควรไปโรงเรียน", 
     img: "/images/Q14.png",
     pollImg: "/images/pollquestion-2.png"
   },
   { 
     id: 15, 
-    text: "Do you agree?", 
+    text: "ผักเป็นสิ่งมีประโยชน์", 
     img: "/images/Q15.png",
     pollImg: "/images/pollquestion-1.png"
   },
   { id: 16,
-    text: "Are you hungry?", 
+    text: "คนเราทำงานเพื่อตัวเอง", 
     img: "/images/Q16.png",
     pollImg: "/images/pollquestion-2.png"
   },
   { 
     id: 17, 
-    text: "Do you like dogs?", 
+    text: "ผู้หญิงโดนคุกคามทางเพศมากกว่าผู้ชาย", 
     img: "/images/Q17.png",
     pollImg: "/images/pollquestion-1.png"
   },
   { 
     id: 18, 
-    text: "Is this true?", 
+    text: "ทุกคนต้องเรียนมหาลัย", 
     img: "/images/Q18.png",
     pollImg: "/images/pollquestion-2.png"
   },
   { 
     id: 19, 
-    text: "Do you agree?", 
+    text: "ผู้ชายควรรักกับผู้หญิง", 
     img: "/images/Q19.png",
     pollImg: "/images/pollquestion-1.png"
   },
   { 
     id: 20, 
-    text: "Are you hungry?", 
+    text: "เราทุกคนมีสิทธิเป็นของตัวเอง",
     img: "/images/Q20.png",
     pollImg: "/images/pollquestion-2.png"
   }

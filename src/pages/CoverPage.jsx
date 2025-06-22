@@ -1,5 +1,4 @@
 // styling
-import "nes.css/css/nes.min.css";
 import '../styles/index.css'
 
 const CoverPage = ({ onStart }) => {
@@ -26,11 +25,11 @@ const CoverPage = ({ onStart }) => {
           </div>
         </div>
         {/* Button */}
-        <div 
-          className="mt-4 px-0.5 py-0.5 border-2 border-blue-200 text-blue-500 bg-transparent rounded-xl font-primary"
+        <button 
+          className="mt-4 px-2 py-1 border-2 border-blue-200 text-blue-500 bg-transparent rounded-xl font-primary"
           onClick={onStart}>
           PRESS TO START 
-        </div>
+        </button>
       </section>
     </div>
     </div>
