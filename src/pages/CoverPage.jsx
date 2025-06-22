@@ -28,7 +28,7 @@ const CoverPage = ({ onStart }) => {
           {/* Button */}
           <button 
             className="mt-4 px-2 py-1 border-2 border-blue-200 text-blue-500 bg-transparent rounded-xl font-primary
-              transition-transform duration-200 hover:-translate-y-1 hover:bg-blue-100"
+              transition-transform duration-200 hover:-translate-y-1 hover:bg-blue-100 hover:cursor-pointer"
             onClick={onStart}>
             PRESS TO START 
           </button>

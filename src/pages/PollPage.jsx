@@ -38,7 +38,7 @@ const PollPage = ({ question, onRandom, onStart }) => {
       <div className='absolute h-full inset-0 bg-white opacity-50 z-10'></div>
 
       {/* Poll Container */}
-    <div className='z-20 flex flex-col'>
+      <div className='z-20 flex flex-col'>
       
       {/* Question */}
       <div className='flex justify-center my-20 relative'>
@@ -66,7 +66,7 @@ const PollPage = ({ question, onRandom, onStart }) => {
               onClick={handleYesVote}
               className='z-10'
               >
-              <ThumbUpWhite className='w-20 sm:w-24 md:w-32 fill-white active:fill-blue-500 active:scale-95 active:translate-y-0.5 transition-all duration-100'/>
+              <ThumbUpWhite className='w-20 sm:w-24 md:w-32 fill-white active:fill-blue-500 active:scale-95 active:translate-y-0.5 transition-all duration-100 hover:cursor-pointer'/>
             </button>
           </div>
 
@@ -76,7 +76,7 @@ const PollPage = ({ question, onRandom, onStart }) => {
               onClick={handleNoVote}
               className='z-10'
               >
-              <ThumbDownWhite className='w-20 sm:w-24 md:w-32 fill-white active:fill-blue-500 active:scale-95 active:translate-y-0.5 transition-all duration-100'/>
+              <ThumbDownWhite className='w-20 sm:w-24 md:w-32 fill-white active:fill-blue-500 active:scale-95 active:translate-y-0.5 transition-all duration-100 hover:cursor-pointer'/>
             </button>
           </div>
         </div>
@@ -103,7 +103,7 @@ const PollPage = ({ question, onRandom, onStart }) => {
         {/* Random & Restart Button */}
         <div className='relative flex justify-center gap-10'>
         <button onClick={onStart}
-        className='relative font-secondary flex items-center justify-center px-10 py-10 transition-all duration-150 hover:scale-105 active:scale-95 active:translate-y-0.5'>
+        className='relative font-secondary flex items-center justify-center px-10 py-10 transition-all duration-150 hover:scale-105 active:scale-95 active:translate-y-0.5 hover:cursor-pointer'>
           <p className='text-white font-bold text-[12px] sm:text-[16px] md:text-[18px] lg:text-[20px] z-10'>เลือกใหม่</p>
          <RestartButton className='absolute z-0 inset-0 object-contain w-full h-full' /> 
         </button>
