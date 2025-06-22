@@ -32,7 +32,7 @@ const PollPage = ({ question, onRandom, onStart }) => {
 
       {/* Background Layer */}
       <div 
-      className='relative bg-responsive bg-cover bg-no-repeat bg-center min-h-screen w-full flex justify-center z-0'>
+      className='relative bg-poll bg-cover bg-no-repeat bg-center min-h-screen w-full flex justify-center z-0'>
 
       {/* Overlay layer */}
       <div className='absolute h-full inset-0 bg-white opacity-50 z-10'></div>
@@ -41,7 +41,7 @@ const PollPage = ({ question, onRandom, onStart }) => {
       <div className='z-20 flex flex-col'>
       
       {/* Question */}
-      <div className='flex justify-center my-20 relative'>
+      <div className='flex justify-center mt-20 relative'>
 
         {/* Wood-sign */}
         <img 
@@ -50,15 +50,15 @@ const PollPage = ({ question, onRandom, onStart }) => {
         />
 
         {/* Question Text */}
-        <h2 className='absolute font-secondary top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-xl sm:text-2xl text-center text-black font-bold px-2'>{question.text}</h2>
+        <h2 className='absolute font-secondary top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-md sm:text-xl text-center text-black font-bold'>{question.text}</h2>
         
-        </div>
+      </div>
 
         {/* Button Container */}
-        <div className='flex flex-col'>
+        <div className='flex flex-col mt-[16px]'>
 
         {/* Vote Button */}
-        <div className='flex flex-row items-center justify-center gap-12 md:gap-30 sm:gap-8'>
+        <div className='flex flex-row items-center justify-center gap-[112px]'>
           
           {/* Yes Button */}
           <div className='relative w-24 h-24 flex items-center justify-center'>
@@ -66,7 +66,7 @@ const PollPage = ({ question, onRandom, onStart }) => {
               onClick={handleYesVote}
               className='z-10'
               >
-              <ThumbUpWhite className='w-20 sm:w-24 md:w-32 fill-white active:fill-blue-500 active:scale-95 active:translate-y-0.5 transition-all duration-100 hover:cursor-pointer'/>
+              <ThumbUpWhite className='w-[96px] fill-white active:fill-blue-500 active:scale-95 active:translate-y-0.5 transition-all duration-100 hover:cursor-pointer'/>
             </button>
           </div>
 
@@ -76,17 +76,17 @@ const PollPage = ({ question, onRandom, onStart }) => {
               onClick={handleNoVote}
               className='z-10'
               >
-              <ThumbDownWhite className='w-20 sm:w-24 md:w-32 fill-white active:fill-blue-500 active:scale-95 active:translate-y-0.5 transition-all duration-100 hover:cursor-pointer'/>
+              <ThumbDownWhite className='w-[96px] fill-white active:fill-blue-500 active:scale-95 active:translate-y-0.5 transition-all duration-100 hover:cursor-pointer'/>
             </button>
           </div>
         </div>
 
         {/* Vote Count */}
       
-          <div className='flex flex-row justify-center gap-12 md:gap-30 sm:gap-8 my-5'>
+          <div className='flex flex-row justify-center gap-[112px] my-5'>
             <div className='relative flex items-center justify-center w-24 h-24'>
               <BubbleRight className='absolute inset-0 w-full h-20 z-0'/>
-              <p className='font-extrabold text-4xl font-primary text-black z-10'>
+              <p className='font-extrabold text-xl font-2p text-black z-10'>
             {yesVote}
             </p>
             </div>
@@ -94,7 +94,7 @@ const PollPage = ({ question, onRandom, onStart }) => {
           <div className='relative flex items-center justify-center w-24 h-24'>
            <BubbleLeft className='absolute inset-0 w-full h-20 z-0'/>
               <p className='font-extrabold text-4xl font-primary text-black z-10'></p> 
-            <p className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-extrabold text-4xl font-primary text-black z-10'>
+            <p className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-extrabold text-xl font-2p text-black z-10'>
             {noVote}
            </p>
           </div>
