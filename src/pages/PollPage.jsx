@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import RandomButton from '../components/RandomButton';
 // styling
 import '../styles/index.css';
@@ -26,6 +26,11 @@ const PollPage = ({ question, onRandom, onStart }) => {
     setYesVote(0);
     setNoVote(0);
   }
+
+  useEffect(() => {
+    setYesVote(0);
+    setNoVote(0);
+  }, [question])
 
   return (
     <div>
