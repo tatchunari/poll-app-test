@@ -2,7 +2,7 @@ const QuestionCard = ({ question, onSelect }) => {
   return (
       <div
         onClick={() => onSelect(question)}
-        className="flex flex-col items-center justify-center cursor-pointer overflow-hidden rounded-xl bg-white border-blue-400 border-2 h-[300px] w-full max-w-[318px] hover:bg-amber-100  hover:border-amber-400 transition-transform duration-300 ease-in-out transform hover:-translate-y-2 hover:shadow-lg"
+        className="flex flex-col items-center justify-center cursor-pointer overflow-hidden rounded-xl bg-white border-blue-400 border-2 h-[295px] w-full max-w-[318px] hover:bg-amber-100  hover:border-amber-400 transition-transform duration-300 ease-in-out transform hover:-translate-y-2 hover:shadow-lg"
       >
         {/* Image */}
           <div className="bg-white mb-3 w-[90%] overflow-hidden rounded-lg">
