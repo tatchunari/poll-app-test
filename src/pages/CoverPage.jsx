@@ -4,10 +4,10 @@ import TextBubble from '../assets/text-bubble.svg?react';
 
 const CoverPage = ({ onStart }) => {
   return (
+    <div className='w-full min-h-screen bg-neutral-100 overflow-x-hidden flex justify-center'>
     <div 
-    className="bg-responsive bg-cover bg-no-repeat bg-center h-screen w-full flex justify-center">
-    <div className='flex justify-center w-full px-4 sm:px-6 md:px-10 lg:px-20 mt-10'>
-      <div className='flex justify-center text-center w-full max-w-screen-md'>
+    className="w-full bg-responsive bg-cover bg-center bg-no-repeat max-w-[1440px] min-h-[1220px] flex flex-col">
+    <div className='flex justify-center text-center px-4 sm:px-6 md:px-10 lg:px-20 mt-10 flex-grow'>
         <section>
           {/* Game title */}
           <div className='mt-[32px]'>
@@ -40,6 +40,9 @@ const CoverPage = ({ onStart }) => {
           </button>
         </section>
       </div>
+    <footer className='w-full flex justify-center'>
+      <div className='bg-footer bg-cover bg-center w-full max-w-[1440px] h-[570px]'></div>
+    </footer>
     </div>
     </div>
   ) 

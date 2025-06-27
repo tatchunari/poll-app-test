@@ -12,21 +12,21 @@
 }
 
 .bg-responsive {
-    background-image: url('/images/bg-mobile.jpg');
+    background-image: url('/images/BG-Mobile/Header-Mobile.jpg');
 }
 
 
-.bg-poll {
-  background-image: url('/images/pollbg-mobile.png');
+.bg-footer {
+  background-image: url('/images/BG-Mobile/Footer-Mobile.jpg');
 }
 
 @media (min-width: 640px) {
     .bg-responsive {
-        background-image: url('/images/bg-desktop.jpg');
+        background-image: url('/images/BG-Desktop/Header.jpg');
     }
 
-    .bg-poll {
-      background-image: url('/images/pollbg-desktop.png');
+    .bg-footer {
+      background-image: url('/images/BG-Desktop/Footer.jpg');
     }
 }
 
