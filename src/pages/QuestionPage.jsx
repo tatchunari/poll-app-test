@@ -11,9 +11,9 @@ const QuestionPage = ({ onPick }) => {
     <div className='flex flex-col my-15 items-center w-[1000px]'>
 
       {/* Header */} 
-      <div className='flex flex-col text-center w-full max-w-[90vw] sm:max-w-[500px] mx-auto'>
-      <h2 className='font-primary text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black'>SELECT YOUR TOPIC</h2>
-      <p className='font-secondary text-[16px] text-black my-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur fugiat nostrum id amet consectetur eveniet a quas quo quibusdam perferendis nam dignissimos molestiae culpa eligendi incidunt quos, unde aut!</p>
+      <div className='flex flex-col text-center w-full max-w-[90vw] sm:max-w-[1000px] mx-auto'>
+      <h2 className='font-secondary text-[30px] font-bold text-black'>รายละเอียด และกติกาในการเล่น</h2>
+      <p className='font-secondary text-[16px] text-black my-6'>เกมนี้ออกแบบมาเพื่อชวนทุกคนมาเปิดใจ พูดคุย และแลกเปลี่ยนมุมมองกันอย่างจริงใจ โดยไม่มีถูกหรือผิด เพียงแค่เลือกว่าคุณ “เห็นด้วย” หรือ “ไม่เห็นด้วย” กับประเด็นที่ปรากฏ แล้วเล่าให้เพื่อนหรือคู่ที่เล่นของคุณฟังว่าเพราะอะไรคุณถึงคิดแบบนั้น จากนั้นลองฟังเหตุผลของกันและกันอย่างไม่ตัดสิน ไม่มีคะแนน ไม่มีการแข่งขัน มีแค่พื้นที่ปลอดภัยเล็ก ๆ ที่ให้เราได้เรียนรู้ความคิดของคนอื่น พร้อมตั้งคำถามกับความคิดของตัวเองอย่างนุ่มนวลอีกครั้ง</p>
       </div>
 
       {/* Question Card */}
