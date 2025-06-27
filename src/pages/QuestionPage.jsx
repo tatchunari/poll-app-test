@@ -5,7 +5,8 @@ import '../styles/index.css'
 
 const QuestionPage = ({ onPick }) => {
   return (
-    <div className="bg-gradient-to-b from-[#B3DAF2] via-[#C8E5F7] to-[#DEF1FC] min-h-screen w-full flex justify-center">
+    <div className='flex justify-center w-full overflow-x-hidden bg-gradient-to-b from-[#C7E9FF] via-[#E3F4FF] to-[#F5F5F5]'>
+    <div className="w-full bg-responsive bg-no-repeat bg-contain max-w-[1440px] min-h-[1220px] flex justify-center">
       {/* Container */}
     <div className='flex flex-col my-15 items-center w-[1000px]'>
 
@@ -21,6 +22,7 @@ const QuestionPage = ({ onPick }) => {
         <QuestionCard key={q.id} question={q} onSelect={onPick} />
       ))}
       </div>
+    </div>
     </div>
     </div>
   )
