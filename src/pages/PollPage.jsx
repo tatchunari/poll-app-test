@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef  } from 'react';
 import RandomButton from '../components/RandomButton';
 // styling
 import '../styles/index.css';
@@ -32,18 +32,36 @@ const PollPage = ({ question, onRandom, onStart }) => {
     setNoVote(0);
   }, [question])
 
+  const useIsMobile = () => {
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
+
+    useEffect(() => {
+      const handleResize = () => setIsMobile(window.innerWidth < 640);
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize); 
+    }, []);
+    return isMobile;
+  };
+
+  const isMobile = useIsMobile();
+  const bgImage = isMobile ? question.bgMobile : question.bgDesktop
+
+  console.log('PollPage question:', question);
+
   return (
-    <div>
+    <div className='w-full min-h-screen overflow-hidden flex justify-center'>
 
       {/* Background Layer */}
       <div 
-      className='relative bg-poll bg-cover bg-no-repeat bg-center min-h-screen w-full flex justify-center z-0'>
-
+      className='w-full relative max-w-[1440px] bg-cover bg-no-repeat bg-center h-[1188px] flex z-0'
+      style={{ backgroundImage: `url(${bgImage})`}}
+      >
+      
       {/* Overlay layer */}
       <div className='absolute h-full inset-0 bg-white opacity-50 z-10'></div>
 
       {/* Poll Container */}
-      <div className='z-20 flex flex-col'>
+      <div className='z-20 flex flex-col items-center w-full max-w-[1440px] max-h-[1220px]'>
       
       {/* Question */}
       <div className='flex justify-center mt-20 relative'>

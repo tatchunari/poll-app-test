@@ -5,7 +5,7 @@ import '../styles/index.css'
 
 const QuestionPage = ({ onPick }) => {
   return (
-    <div className="bg-responsive bg-cover bg-no-repeat bg-center min-h-screen w-full flex justify-center">
+    <div className="bg-gradient-to-b from-[#B3DAF2] via-[#C8E5F7] to-[#DEF1FC] min-h-screen w-full flex justify-center">
       {/* Container */}
     <div className='flex flex-col my-15 items-center w-[1000px]'>
 
