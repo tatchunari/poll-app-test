@@ -32,6 +32,11 @@ const PollPage = ({ question, onRandom, onStart }) => {
     setNoVote(0);
   }, [question])
 
+  useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
+
+
   const useIsMobile = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
 
