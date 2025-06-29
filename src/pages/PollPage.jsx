@@ -58,7 +58,7 @@ const PollPage = ({ question, onRandom, onStart }) => {
 
       {/* Background Layer */}
       <div 
-      className='w-full relative max-w-[1440px] bg-cover bg-no-repeat bg-center h-[1188px] flex z-0'
+      className='w-full relative max-w-[1440px] bg-cover bg-no-repeat bg-center flex z-0'
       style={{ backgroundImage: `url(${bgImage})`}}
       >
       
