@@ -6,7 +6,7 @@ const CoverPage = ({ onStart }) => {
   return (
     <div className='w-full min-h-screen bg-neutral-100 overflow-x-hidden flex justify-center'>
     <div 
-    className="w-full bg-responsive bg-cover bg-center bg-no-repeat max-w-[1440px] min-h-[1220px] flex flex-col">
+    className="w-full bg-responsive bg-cover bg-center bg-no-repeat max-w-[1440px] flex flex-col">
     <div className='flex justify-center text-center px-4 sm:px-6 md:px-10 lg:px-20 mt-10 flex-grow'>
         <section>
           {/* Game title */}
